@@ -1,0 +1,86 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<head>     
+	<meta charset="utf-8">
+	<title>WokStation</title>     
+	<meta name="description" content="WokStation Food Truck">    
+	<script src="js/modernizr.min.js" type="text/javascript" ></script> 
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.appear-1.1.1.modified.js" type="text/javascript"></script>
+	<script>
+		if(Modernizr.csstransitions){
+			function preloadImages(imgs, callback){
+				var cache =[],
+					imgsTotal = imgs.length,
+					imgsLoaded = 0;
+				$(imgs).each(function(i, img){
+					var cacheImage = document.createElement('img');
+					cacheImage.onLoad = function(){
+						
+					};
+				});
+			}
+		}
+	</script>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
+</head>
+<body>
+	<!-- NavBar -->
+	<!--
+	<nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+				<a href="" class="navbar-brand" title="">WokStation</a>
+			</div>
+		</div>	
+		<ul>
+			<li><a href="" title=""></a></li>
+		</ul>
+	</nav>
+-->
+	<!-- Body -->
+	<div class="container-fluid wok">
+		<div class="slide" id="slide1">
+			
+			<div id="main-slide">
+				<img style="visibility: hidden;" src="images/home-banner.jpg" alt="">	
+			</div>
+			<!--Conocenos-->
+			
+			<div id="meet-us" class="container-fluid">
+				<div class="row top-scratch">
+					<div>
+						<img src="images/top-scratch.png" alt="">
+					</div>
+				</div>
+				<div class="row meet-us-content">
+					<div class="col-md-3">
+						<div class="left-wok">
+							<img src="images/wok-izquierdo.png" alt="">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<p>
+							Bienvenido a THE WOK STATION una opción saludable, versátil y urbana para los amantes de la cocina oriental sin pretensiones. Somos especialistas en el manejo del WOK un utensilio básico de la cocina asiática y hoy adoptado por culturas de todo el mundo, que nos permite ofrecer una gran variedad de platillos preparados al momento que conservan el sabor, textura y propiedades de todos sus ingredientes.
+						</p>
+					</div>
+					<div class="col-md-3 right-wok">
+						<div class="right-wok">
+							<img src="images/wok-derecho.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>		
+	<script src="js/bootstrap.js"></script>
+</body>
+</html>
