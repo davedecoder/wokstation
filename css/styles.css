@@ -26,6 +26,8 @@ body {
 .parallax_group {
   position: relative;
   height: 100vh;
+  -webkit-transform: preserve-3d;
+  -moz-transform: preserve-3d;
   transform: preserve-3d;
 }
 
@@ -35,7 +37,10 @@ body {
   height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
-  perspective-origin-x: 100%;
+  /*
+  -webkit-perspective-origin-x: 100%;
+  -moz-perspective-origin-x: 100%;
+  perspective-origin-x: 100%;*/
 }
 
 .parallax_layer {
@@ -45,7 +50,10 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  transform-origin-x: 100%;
+  /*
+  -moz-transform-origin-x: 100%;
+  -webkit-transform-origin-x: 100%;
+  transform-origin-x: 100%;*/
 }
 
 .parallax_layer_base {   
@@ -82,8 +90,9 @@ body {
 }
 
 #slide_2_back{
+  position: relative;
   display: table;
-  width: 100%;  
+  width: 100%;    
   background-image: url("../images/pizarra.png");
   background-repeat: repeat-y;
   background-size: cover;
@@ -97,20 +106,21 @@ body {
 }
 
 #slide_2_container{
-  display: table-row;
+  display: table-row;  
 }
 
 
 #slide_2_front{  
   margin-top: 25%;
   margin-bottom: 350px;
+  min-height: 1523px !important;
 }
 
 
 #slide_3{  
-  display: block;
-  margin-top: 250px;
-  top: 400%;
+  display: table;
+  margin-top: 40%;
+  z-index: -1;
 }
 
 
@@ -198,7 +208,6 @@ body {
 .left_arrow_container{
   position: absolute;
   top: 50%;
-  z-index: 116 !important;
   display: inline-block;
   margin-left: -140px;
 }
@@ -206,7 +215,26 @@ body {
 .right_arrow_container{
   position: absolute;
   top: 50%;
-  z-index: 111116 !important;
   display: inline-block;
   margin-right: -140px;
+}
+
+.carousel_background{
+  width: 1500px !important;
+  top: 200px;
+}
+
+
+.left_arrow_container_2{
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  margin-left: -60px;
+}
+
+.right_arrow_container_2{
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  margin-left: -60px;
 }
