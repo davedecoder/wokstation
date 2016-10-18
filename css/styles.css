@@ -35,6 +35,7 @@ body {
 #meet-us {
   margin-top: -187px;
   z-index: 10;
+  display: table;
 }
 
 .top-scratch {
@@ -44,6 +45,7 @@ body {
     margin-bottom: -5px;
     width: 100%;
     position: relative;
+    display: table-row;
 }
 
 .top-scratch div{
@@ -62,6 +64,7 @@ body {
     width: 100%;
     max-height: 185px;
     position: relative;
+    display: table-row;
 }
 
 .bottom-scratch div{
@@ -73,13 +76,11 @@ body {
 }
 
 .meet-us-content{
-    display: block;
+    display: table-row;
     background-color: white;
     position: relative;
     left: 0%;
     width: 100%;
-    height: 75%;
-    min-height: 249px;
 }
 
 .meet-us-content-block{
@@ -105,7 +106,7 @@ body {
 
 #menu{
   z-index: 9;
-  top: -20px;
+  top: -230px;
 }
 
 #menu_background{
@@ -118,7 +119,16 @@ body {
   -o-background-size: cover;
   background-size: cover;
   background-position: left top; 
-  padding-top: 200px; 
+  padding-top: 230px; 
+}
+
+#post-menu{
+  position: relative;
+  display: inline-block;  
+  padding-top: 7%;
+  padding-bottom: 7%; 
+  color: white;
+  overflow: hidden !important;
 }
 
 #pizarra-bottom-scratch {
@@ -137,8 +147,9 @@ body {
 }
 
 #gallery{
-  margin-top: -20%;
+  margin-top: -36%;
   z-index: 8;
+  margin-bottom: -1px; 
 }
 
 #philosophy{
