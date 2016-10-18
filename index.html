@@ -14,26 +14,36 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
 	<!--<link rel="stylesheet" type="text/css" href="css/animate.css">-->
-	<link rel="stylesheet" type="text/css" href="css/set.css">
+	<link rel="stylesheet" type="text/css" href="css/set.css">	
 
 	<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/navbar.css">
 
 	<!-- gallery -->
 	<link rel="stylesheet" href="assets/gallery/blueimp-gallery.min.css">
 </head>
 <body>
 	<!-- NavBar -->
-	<nav class="navbar navbar-inverse-sidebar" role="navigation">
-		<div class="container-fluid">
-			<!-- Brand and toggle get grouped for a better mobile display -->
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-sidebar-navbar-collapse-1">
-				</button>
-			</div>
-		</div>
-	</nav>
+	<div id="mySidenav" class="sidenav">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <a href="#meet-us" class="page-scroll">Bienvenido</a>
+	  <a href="#menu" class="page-scroll">Conócenos</a>
+	  <a href="#gallery" class="page-scroll">Pruébanos</a>
+	  <a href="#philosophy" class="page-scroll">Vivenos</a>
+	  <a href="#works" class="page-scroll">Encuéntranos</a>
+	  <a href="#contact" class="page-scroll">Contáctanos</a>
+	</div>
+	<div class="navbar-header navbar-header-augmented">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-sidebar-navbar-collapse-1">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand navbar-brand-augmented" href="#" onclick="openNav()"><img src="images/logo-home-menu.png" alt=""></a>
+    </div>	
 	<!-- NavBar ENDS -->
 	<!-- Body -->
 	<div class="container-fluid pagination-centered">
@@ -290,12 +300,22 @@
 			</div>
 		</div>
 	</div>			
+	<script>
+		/* Set the width of the side navigation to 250px */
+		function openNav() {
+		    document.getElementById("mySidenav").style.width = "250px";
+		}
 
+		/* Set the width of the side navigation to 0 */
+		function closeNav() {
+		    document.getElementById("mySidenav").style.width = "0";
+		}
+	</script>
 	<script src="js/bootstrap.js"></script>
 	<script src="assets/js/jquery.backstretch.min.js"></script>
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/scripts.js"></script>
-	<!--<script src="js/mainController.js" type="text/javascript"></script>-->
+	<script src="js/mainController.js" type="text/javascript"></script>
 	<!-- gallery -->
 	<script src="assets/gallery/jquery.blueimp-gallery.min.js"></script>
 </body>

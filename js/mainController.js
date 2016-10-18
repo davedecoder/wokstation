@@ -1,4 +1,5 @@
 jQuery(document).ready(function($){
+	/*
 	var $animation_elements = $('.animation-element');
 	var $window = $(window);
 
@@ -34,5 +35,15 @@ jQuery(document).ready(function($){
 	}
 
 	$window.on('scroll resize', check_if_in_view);
-	$window.trigger('scroll');
+	$window.trigger('scroll');*/
+
+	$(function() {
+	    $('a.page-scroll').bind('click', function(event) {
+	        var $anchor = $(this);
+	        $('html, body').stop().animate({
+	            scrollTop: $($anchor.attr('href')).offset().top
+	        }, 1500, 'easeInOutExpo');
+	        event.preventDefault();
+	    });
+	});
 });
