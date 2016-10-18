@@ -40,8 +40,8 @@ body {
 .top-scratch {
   /*
     margin-left: 0 !important;
-    margin-right: 0 !important;
-    margin-bottom: -3px;*/
+    margin-right: 0 !important;*/
+    margin-bottom: -5px;
     width: 100%;
     position: relative;
 }
@@ -57,8 +57,8 @@ body {
 
 .bottom-scratch {/*
     margin-left: 0 !important;
-    margin-right: 0 !important;
-    margin-bottom: -3px;*/
+    margin-right: 0 !important;*/
+    top: -1px;
     width: 100%;
     max-height: 185px;
     position: relative;
@@ -79,7 +79,7 @@ body {
     left: 0%;
     width: 100%;
     height: 75%;
-    min-height: 200px;
+    min-height: 249px;
 }
 
 .meet-us-content-block{
@@ -105,6 +105,7 @@ body {
 
 #menu{
   z-index: 9;
+  top: -20px;
 }
 
 #menu_background{
@@ -117,14 +118,14 @@ body {
   -o-background-size: cover;
   background-size: cover;
   background-position: left top; 
-  padding-top: 187px; 
+  padding-top: 200px; 
 }
 
 #pizarra-bottom-scratch {
     width: 100%;
     max-height: 185px;
     position: relative;
-    margin-top: -1px;
+    margin-top: -5px;
 }
 
 #pizarra-bottom-scratch div{
@@ -154,7 +155,7 @@ body {
   padding-top: 7%;
   padding-bottom: 7%; 
   color: white;
-  margin-bottom: -5px;
+  margin-bottom: -10px;
   overflow: hidden !important;
 }
 
@@ -168,6 +169,68 @@ body {
 #works figcaption a{border:1px solid #fff;margin-top: 1em;display: inline-block;color: #fff;padding: 0 2em;}
 #works figcaption a:hover{text-decoration: none;padding: 0 3em;}
 /*works*/
+
+
+#contact{
+  position: relative;
+  display: inline-block;
+  width: 100%; 
+  background-image: url("../images/textura-cemento.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: left top; 
+}
+
+#contact input{
+  border-width: 2px;
+  border-color: #d1162e;
+  background-color: #2a2f33;
+}
+
+#contact textarea{
+  border-width: 2px;
+  border-color: #d1162e;
+  background-color: #2a2f33;
+}
+
+
+
+#location_container{  
+  text-align: left;
+  margin-top: 25%;  
+}
+
+#location_container div{
+  margin: 0;
+  display: inline-block;
+}
+
+.location{
+  display: inline-block;
+  color: white;
+}
+
+.location img{
+  min-width: 15%;
+  max-width: 20%;
+  display: inline-block;
+  float: left;
+  margin-top: 5%;
+}
+
+.address {
+  display: inline-block;
+  float: left;
+  text-align: left;
+  padding-left: 5%;
+}
+
+.address h3{
+  color: white;
+
+}
 
 /*PARALLAX*/
 .title {
