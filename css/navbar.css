@@ -1,15 +1,20 @@
 /* The side navigation menu */
 .sidenav {
     height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
     z-index: 1000; /* Stay on top */
     left: 0;
+    width: 0; /* 0 width - change this with JavaScript */
     top: 0;
-    background-color: rgba(10,10,10,0.8);; /* Black*/
+    background-color: rgba(10,10,10,0.8); /* Black*/
     overflow: hidden; /* Disable horizontal scroll */
-    padding-top: 100px; /* Place content 60px from the top */
+    padding-top: 100px; /* Place content 100px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */    
+}
+
+
+.sidenav-non-collapsed{
+    width: 250px; /* 0 width - change this with JavaScript */
 }
 
 /* The navigation menu links */
@@ -91,4 +96,132 @@
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+}
+
+/* ----------- iPad mini ----------- */
+/* Portrait */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+    .sidenav-non-collapsed{
+        width: 100%; /* 0 width - change this with JavaScript */
+    }
+
+    /* The side navigation menu */
+    .sidenav {  
+        padding-top: 40px; /* Place content 40px from the top */
+    }
+
+    .sidenav a {
+        padding: 8px 8px 8px 8px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #f1f1f1;
+        display: block;
+        transition: 0.3s;
+        line-height: 2.5em;
+        text-align: center;    
+    }
+
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .sidenav-non-collapsed{
+        width: 100%; /* 0 width - change this with JavaScript */
+    }
+
+    /* The side navigation menu */
+    .sidenav {
+        padding-top: 40px; /* Place content 40px from the top */
+    }
+
+    .sidenav a {
+        padding: 8px 8px 8px 8px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #f1f1f1;
+        display: block;
+        transition: 0.3s;
+        line-height: 2.5em;
+        text-align: center;    
+    }
+}
+
+/* ----------- Mobile ----------- */
+/* Portrait */
+@media only screen 
+  and (max-device-width: 767px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+    .sidenav-non-collapsed{
+        width: 100%; /* 0 width - change this with JavaScript */
+    }
+
+    /* The side navigation menu */
+    .sidenav {  
+        padding-top: 50px; /* Place content 40px from the top */
+    }
+
+    .sidenav a {
+        padding: 8px 8px 8px 8px;
+        text-decoration: none;
+        font-size: 45px;
+        color: #f1f1f1;
+        display: block;
+        transition: 0.3s;
+        line-height: 4em;
+        text-align: center;    
+    }
+
+    .navbar-bottom div span {
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+
+    .navbar-bottom div span img{
+        width: 80px;
+    }
+
+    .top-rr{
+        margin-top: 20px;
+        font-size: 45px;
+    }
+
+
+}
+
+/* Landscape */
+@media only screen 
+  and (max-device-width: 767px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .sidenav-non-collapsed{
+        width: 100%; /* 0 width - change this with JavaScript */
+    }
+
+    /* The side navigation menu */
+    .sidenav {
+        padding-top: 50px; /* Place content 40px from the top */
+    }
+
+    .sidenav a {
+        padding: 8px 8px 8px 8px;
+        text-decoration: none;
+        font-size: 38px;
+        color: #f1f1f1;
+        display: block;
+        transition: 0.3s;
+        line-height: 1.3em;
+        text-align: center;    
+    }
 }
