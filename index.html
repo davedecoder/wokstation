@@ -11,6 +11,14 @@
 	<script src="js/jquery.appear-1.1.1.modified.js" type="text/javascript"></script>
 	
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+	<script>
+		$(window).on("load",(function() {
+			// Animate loader off screen
+			$(".se-pre-con").fadeOut(3000);
+			
+		}));
+	</script>
 	
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
@@ -323,12 +331,6 @@
 	<script>
 		var opened = false;
 
-		$(window).load(function() {
-			// Animate loader off screen
-			$(".se-pre-con").fadeOut("slow");
-			console.log("hello");
-		});
-
 		function openClose(){
 			$("#mySidenav").toggleClass("sidenav-non-collapsed");
 			/*
@@ -358,7 +360,6 @@
 	<!-- gallery -->
 	<script src="assets/gallery/jquery.blueimp-gallery.min.js"></script>
 </body>
-<!--
 <div class="se-pre-con">
-</div>-->
+</div>
 </html>
