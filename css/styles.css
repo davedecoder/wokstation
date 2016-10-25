@@ -1,10 +1,22 @@
+@font-face{
+  font-family: futura;
+  src: url(../fonts/FuturaStd-Medium.otf);
+}
+
+@font-face{
+  font-family: futura;
+  src: url(../fonts/FuturaStd-Heavy.otf);
+  font-weight: bold;
+
+}
+
 html{
     display: block;
     height: 100%;
 } 
 
 body {
-  font: 100% / 1.5 Arial;  
+  font-family: futura !important;  
   height: 100%;
 }
 

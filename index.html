@@ -27,16 +27,31 @@
 <body>
 	<!-- NavBar -->
 	<div id="mySidenav" class="sidenav">
-		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		  <!--<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
 		  <a href="#meet-us" class="page-scroll">Bienvenido</a>
 		  <a href="#menu" class="page-scroll">Conócenos</a>
 		  <a href="#gallery" class="page-scroll">Pruébanos</a>
 		  <a href="#philosophy" class="page-scroll">Vivenos</a>
 		  <a href="#works" class="page-scroll">Encuéntranos</a>
 		  <a href="#contact" class="page-scroll">Contáctanos</a>
+		  	<div class="navbar-bottom">
+	    		<div class=" text-center">
+	    			<span>
+	    				<img src="images/icons/facebook-icon.png" alt="">
+	    			</span>
+	    			<span>
+	    				<img src="images/icons/twitter-icon.png" alt="">
+	    			</span>
+	    			<span>
+	    				<img src="images/icons/instagram-icon.png" alt="">
+	    			</span>
+	    		</div>
+	      	</div>
+	      	<p>Todos los Derechos Reservados</p>
 		</div>
+
 	<div class="navbar-header navbar-header-augmented">
-        <a class="navbar-brand navbar-brand-augmented" href="javascript:void(0)" onclick="openNav()"><img src="images/logo-home-menu.png" alt=""></a>
+        <a class="navbar-brand navbar-brand-augmented" href="javascript:void(0)" onclick="openClose()"><img src="images/logo-home-menu.png" alt=""></a>
     </div>	
 	<!-- NavBar ENDS -->
 	<!-- Body -->
@@ -295,6 +310,17 @@
 		</div>
 	</div>			
 	<script>
+		var opened = false;
+
+		function openClose(){
+			if(!opened){
+				document.getElementById("mySidenav").style.width = "250px";	
+			}else{
+				document.getElementById("mySidenav").style.width = "0";
+			}
+			opened = !opened;
+		}
+
 		/* Set the width of the side navigation to 250px */
 		function openNav() {
 		    document.getElementById("mySidenav").style.width = "250px";

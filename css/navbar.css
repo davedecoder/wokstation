@@ -6,25 +6,27 @@
     z-index: 1000; /* Stay on top */
     left: 0;
     top: 0;
-    background-color: #111; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    background-color: rgba(10,10,10,0.8);; /* Black*/
+    overflow: hidden; /* Disable horizontal scroll */
+    padding-top: 100px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */    
 }
 
 /* The navigation menu links */
 .sidenav a {
-    padding: 8px 8px 8px 32px;
+    padding: 8px 8px 8px 85px;
     text-decoration: none;
-    font-size: 25px;
-    color: #818181;
+    font-size: 15px;
+    color: #f1f1f1;
     display: block;
-    transition: 0.3s
+    transition: 0.3s;
+    line-height: 3.2em;
+    text-align: left;    
 }
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover, .offcanvas a:focus{
-    color: #f1f1f1;
+    color: #e8643e;
 }
 
 /* Position and style the close button (top right corner) */
@@ -47,7 +49,7 @@
     width: 100%;
     margin-left: 0px;
     position: fixed;
-    z-index: 950;
+    z-index: 1050;
 }
 
 .navbar-brand-augmented{
@@ -56,7 +58,7 @@
     margin-left: 0px;
     position: fixed;
     z-index: 950;
-    left: 3%;
+    left: 33px;
 }
 
 .navbar-brand-augmented img{
@@ -64,6 +66,25 @@
     margin: 0;
     width: 150px;
     float: left;
+}
+
+.navbar-bottom{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom-color: rgba(255, 255, 255, 0.8);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-color: rgba(255, 255, 255, 0.8);
+    border-right-color: rgba(255, 255, 255, 0.8);
+    border-top-color: rgba(255, 255, 255, 0.8);
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.navbar-bottom div span{
+    margin-left: 7px;
+    margin-right: 7px;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
