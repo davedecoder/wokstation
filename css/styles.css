@@ -10,13 +10,19 @@
 
 }
 
+@font-face{
+  font-family: heiti;
+  src: url(../fonts/STHeiti Light.ttc);
+}
+
+
 html{
     display: block;
     height: 100%;
 } 
 
 body {
-  font-family: futura !important;  
+  font-family: heiti !important;  
   height: 100%;
 }
 

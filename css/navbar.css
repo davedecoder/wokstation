@@ -1,5 +1,6 @@
 /* The side navigation menu */
 .sidenav {
+    font-family: futura !important;  
     height: 100%; /* 100% Full-height */
     position: fixed; /* Stay in place */
     z-index: 1000; /* Stay on top */
@@ -87,9 +88,14 @@
     padding: 10px;
 }
 
+
 .navbar-bottom div span{
-    margin-left: 7px;
-    margin-right: 7px;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.navbar-bottom div span img{
+    width: 20px;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
