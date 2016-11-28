@@ -5,7 +5,7 @@
     position: fixed; /* Stay in place */
     z-index: 1000; /* Stay on top */
     left: 0;
-    width: 0; /* 0 width - change this with JavaScript */
+    width: 250px; /* 0 width - change this with JavaScript */
     top: 0;
     background-color: rgba(10,10,10,0.8); /* Black*/
     overflow: hidden; /* Disable horizontal scroll */
