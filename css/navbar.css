@@ -1,9 +1,9 @@
 /* The side navigation menu */
 .sidenav {
     font-family: futura !important;  
-    height: 100%; /* 100% Full-height */
-    position: fixed; /* Stay in place */
-    z-index: 1000; /* Stay on top */
+    height: 150%; /* 100% Full-height */
+    position: absolute; /* Stay in place */
+    z-index: 1; /* Stay on top */
     left: 0;
     width: 250px; /* 0 width - change this with JavaScript */
     top: 0;
@@ -54,7 +54,7 @@
     text-align: center;
     width: 100%;
     margin-left: 0px;
-    position: fixed;
+    position: absolute;
     z-index: 1050;
 }
 
@@ -62,7 +62,7 @@
     text-align: center;
     width: 100%;    
     margin-left: 0px;
-    position: fixed;
+    position: absolute;
     z-index: 950;
     left: 33px;
 }
@@ -169,8 +169,13 @@
   and (orientation: portrait) 
   and (-webkit-min-device-pixel-ratio: 1) {
 
+    .sidenav{
+        display: none;
+    }
+
     .sidenav-non-collapsed{
         width: 100%; /* 0 width - change this with JavaScript */
+        
     }
 
     /* The side navigation menu */

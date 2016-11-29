@@ -1137,3 +1137,40 @@ figure.effect-chico:hover p {
 @media (max-width: 639px) {
 	.grid figure {width: 100%;}
 }
+
+/* ----------- Mobile ----------- */
+/* Portrait */
+@media only screen 
+  and (max-device-width: 767px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+  	.grid figure {
+		position: relative;
+		float: left;
+		overflow: hidden;
+		margin: 0;	/*change here for spacing*/	
+		width: 50%;
+		text-align: center;
+		cursor: pointer;
+	}
+
+	.c-form-bottom form div input {
+		width: 100%;
+	}
+}
+
+/* Landscape */
+@media only screen 
+  and (max-device-width: 767px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+  	.grid figure {
+		position: relative;
+		float: left;
+		overflow: hidden;
+		margin: 0;	/*change here for spacing*/	
+		width: 25%;
+		text-align: center;
+		cursor: pointer;
+	}    
+}

@@ -24,6 +24,8 @@ html{
 body {
   font-family: heiti !important;  
   height: 100%;
+  /*width: 100% !important;*/
+  overflow-x: hidden;
 }
 
 .no-js #loader { display: none;  }
@@ -45,7 +47,7 @@ body {
 #start{
 
   background-color: black;
-  background: url("../images/home-banner.jpg");
+  background: url("../images/home-banner.png");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -63,7 +65,7 @@ body {
 }
 
 #meet-us {
-  margin-top: -187px;
+  margin-top: -154px;
   z-index: 10;
   display: table;
 }
@@ -203,6 +205,10 @@ body {
 .carousel_background{
   width: 1500px !important;
   
+}
+
+.carousel_item img{
+  width: 100%;
 }
 
 /*works*/
@@ -421,12 +427,19 @@ body {
   margin-right: -140px;
 }
 
+.left_arrow_container img{
+  width: 50%;
+}
 
 .left_arrow_container_2{
   position: absolute;
   top: 50%;
   display: inline-block;
   margin-left: -60px;
+}
+
+.right_arrow_container img{
+  width: 50%;
 }
 
 .right_arrow_container_2{
@@ -443,6 +456,10 @@ body {
 .tail-img img {
   width: 60px;
 }
+
+.normal-text p{
+  font-size: 1.5em;
+}
 /* ----------- Mobile ----------- */
 /* Portrait */
 @media only screen 
@@ -450,15 +467,71 @@ body {
   and (orientation: portrait) 
   and (-webkit-min-device-pixel-ratio: 1) {
 
+    .normal-text{
+      padding-left: 35px;
+      padding-right: 35px;
+    }
+
+    .normal-text p{
+      font-size: 3em;
+      line-height: 1em;
+    }
+
     .top-scratch img{
       margin-bottom: -3px;
+      margin-left: 2px;
     }
 
     .bottom-scratch img {
       margin-top: -3px;
     }
-    
 
+    .address{
+      font-size: 2em;
+      line-height: 1em;
+    }
+    
+    #location_container {
+      margin-top: 0;
+    }
+
+    .office{
+      width: 100% !important;
+    }
+
+    .location{
+      width: 100% !important;
+      margin-left: 30px !important;
+    }
+
+    .addressTitle{
+      font-size: 1.5em;
+    }
+
+    .my-contact-form{
+      -ms-transform: scale(1.8, 1.5); /* IE 9 */
+      -webkit-transform: scale(1.8, 1.5); /* Safari */
+      transform: scale(1.8, 1.5);
+      margin-top: 150px;
+      margin-bottom: 150px;
+      font-size: 2em;
+    }
+
+    .contact-us-title{
+      font-size: 2em;
+    }
+
+    input[type="text"]{
+      font-size: 1em !important;
+    }
+
+    textarea{
+      font-size: .8em !important; 
+    }
+
+    button{
+      font-size: .8em !important; 
+    }
 }
 
 /* Landscape */
@@ -473,6 +546,30 @@ body {
 
     .top-scratch img{
       margin-bottom: -3px;
+      width: 101%;
     }
     
+    .address{
+      font-size: 3em;
+      line-height: 1em;
+    }
+
+    #location_container {
+      margin-top: 0;
+    }
+
+    
+    .office{
+      width: 100% !important;
+    }
+
+    .location{
+      width: 100% !important;
+      margin-left: 80px !important;
+    }
+
+    .addressTitle{
+      font-size: 1.5em;
+    }
+
 }
