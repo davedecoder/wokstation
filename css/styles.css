@@ -24,7 +24,7 @@ html{
 body {
   font-family: heiti !important;  
   height: 100%;
-  /*width: 100% !important;*/
+  width: 100% !important;
   overflow-x: hidden;
 }
 
@@ -127,9 +127,11 @@ body {
     
 }
 .center-wok{
-  margin: 3%;
-  padding: 3%;
+  margin: 2%;
+  padding-top: 3%;
   clear: both;
+  color: black;
+  font-family: futura;
 }
 
 .right-wok{
@@ -228,6 +230,7 @@ body {
   -o-background-size: cover;
   background-size: cover;
   background-position: left top; 
+  font-family: futura;
 }
 
 #contact input{
@@ -458,8 +461,30 @@ body {
 }
 
 .normal-text p{
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
+
+@media (max-width: 1600px){
+  .menu_inner{
+    width: 60%;
+  }
+}
+
+@media (max-width: 1366px){
+  .menu_inner{
+    width: 50%;
+  }
+}
+
+@media (max-width: 1280px)  {
+    #start_container img{
+        max-width: 1280px;
+        width: 1280px !important;
+        overflow-x: hidden;
+    }
+
+}
+
 /* ----------- Mobile ----------- */
 /* Portrait */
 @media only screen 
