@@ -1,6 +1,4 @@
-/* The side navigation menu */
-.sidenav {
-    font-family: futura !important;  
+.sidenav-background {
     height: 150%; /* 100% Full-height */
     position: absolute; /* Stay in place */
     z-index: 1; /* Stay on top */
@@ -8,10 +6,22 @@
     width: 250px; /* 0 width - change this with JavaScript */
     top: 0;
     background-color: rgba(10,10,10,0.8); /* Black*/
+}
+
+/* The side navigation menu */
+.sidenav {
+    font-family: futura !important;  
+    height: 150%; /* 100% Full-height */
+    position: absolute; /* Stay in place */
+    z-index: 21; /* Stay on top */
+    left: 0;
+    width: 250px; /* 0 width - change this with JavaScript */
+    top: 0;
     overflow: hidden; /* Disable horizontal scroll */
     padding-top: 100px; /* Place content 100px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */    
 }
+
 
 
 .sidenav-non-collapsed{
@@ -94,7 +104,13 @@
     margin-right: 12px;
 }
 
-.navbar-bottom div span img{
+.navbar-bottom div a{
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+.navbar-bottom img{
     width: 20px;
 }
 
@@ -181,6 +197,10 @@
   and (max-device-width: 767px) 
   and (orientation: portrait) 
   and (-webkit-min-device-pixel-ratio: 1) {
+
+    .sidenav-background{
+        display: none;
+    }
 
     .sidenav{
         display: none;
