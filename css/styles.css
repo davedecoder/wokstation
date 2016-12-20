@@ -19,6 +19,7 @@
 html{
     display: block;
     height: 100%;
+    background-color: black;
 } 
 
 body {
@@ -47,7 +48,7 @@ body {
 #start{
 
   background-color: black;
-  background: url("../images/home-banner.png");
+  background: url("../images/home-banner.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -205,7 +206,7 @@ body {
 }
 
 .carousel_background{
-  width: 1500px !important;
+  /*width: 1500px !important;*/
   
 }
 
@@ -461,7 +462,16 @@ body {
 }
 
 .normal-text p{
-  font-size: 1.2em;
+  font-size: 1.3em;
+}
+
+.fit { /* set relative picture size */
+  max-width: 100%;
+  max-height: 100%;
+}
+.center {
+  display: block;
+  margin: auto;
 }
 
 @media (max-width: 1600px){
@@ -472,17 +482,89 @@ body {
 
 @media (max-width: 1366px){
   .menu_inner{
-    width: 50%;
+    width: 35%;
   }
 }
 
+
+@media (max-device-width: 1280px){
+  .menu_inner{
+    width: 60%;
+  }
+}
+
+@media (max-device-width: 920px) {
+  .menu_inner{
+    width: 70%;
+  }
+}
+/*
 @media (max-device-width: 1280px) and (min-device-width: 800px) {
     #start_container img{
         max-width: 1280px;
         width: 1280px !important;
         overflow-x: hidden;
     }
+}*/
+
+/* ----------- iPad mini ----------- */
+/* Portrait */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+
+    .top-scratch img{
+      margin-bottom: -3px;
+      margin-left: 2px;
+    }
+
+    .bottom-scratch img {
+      margin-top: -3px;
+    }
+
+    .normal-text p{
+      font-size: 2em;
+      line-height: 1em;
+    }   
+
+    .address{
+      font-size: 1.7em;
+      line-height: 1em;
+    }
+
 }
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+    .top-scratch img{
+      margin-bottom: -3px;
+      margin-left: 2px;
+    }
+
+    .bottom-scratch img {
+      margin-top: -3px;
+    }
+
+    .normal-text p{
+      font-size: 1.5em;
+      line-height: 1em;
+    }
+    
+    .address{
+      font-size: 1.7em;
+      line-height: 1em;
+    }
+    
+}
+
 
 /* ----------- Mobile ----------- */
 /* Portrait */
@@ -497,7 +579,7 @@ body {
     }
 
     .normal-text p{
-      font-size: 3em;
+      font-size: 2.5em;
       line-height: 1em;
     }
 
@@ -582,7 +664,7 @@ body {
     }
     
     .address{
-      font-size: 3em;
+      font-size: 2em;
       line-height: 1em;
     }
 
@@ -602,6 +684,15 @@ body {
 
     .addressTitle{
       font-size: 1.5em;
+    }
+
+    .menu_inner{
+      width: 55%;
+    }
+
+    .normal-text p{
+      font-size: 2.5em;
+      line-height: 1em;
     }
 
 }

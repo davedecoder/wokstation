@@ -116,7 +116,7 @@
 
 @media (max-width: 1280px)  {
     .sidenav{
-        padding-top: 110px;
+        padding-top: 120px;
     }
 
     .sidenav a{
@@ -147,18 +147,23 @@
 
     /* The side navigation menu */
     .sidenav {  
-        padding-top: 40px; /* Place content 40px from the top */
+        padding-top: 120px; /* Place content 40px from the top */
     }
 
     .sidenav a {
         padding: 8px 8px 8px 8px;
         text-decoration: none;
-        font-size: 25px;
+        font-size: 23px;
         color: #f1f1f1;
         display: block;
         transition: 0.3s;
-        line-height: 2.5em;
+        line-height: 1.5em;
         text-align: center;    
+    }
+
+
+    .navbar-bottom{
+        margin-top: 0px;
     }
 
 
@@ -176,17 +181,17 @@
 
     /* The side navigation menu */
     .sidenav {
-        padding-top: 40px; /* Place content 40px from the top */
+        padding-top: 110px; /* Place content 40px from the top */
     }
 
     .sidenav a {
         padding: 8px 8px 8px 8px;
         text-decoration: none;
-        font-size: 25px;
+        font-size: 23px;
         color: #f1f1f1;
         display: block;
         transition: 0.3s;
-        line-height: 2.5em;
+        line-height: 1.3em;
         text-align: center;    
     }
 }
@@ -236,6 +241,7 @@
         width: 80px;
     }
 
+
     .top-rr{
         margin-top: 20px;
         font-size: 45px;
@@ -261,11 +267,19 @@
     .sidenav a {
         padding: 8px 8px 8px 8px;
         text-decoration: none;
-        font-size: 38px;
+        font-size: 23px;
         color: #f1f1f1;
         display: block;
         transition: 0.3s;
         line-height: 1.3em;
         text-align: center;    
+    }
+
+    .sidenav{
+        padding-top: 110px;
+    }
+
+    .sidenav a{
+        line-height: 1.5em;
     }
 }
