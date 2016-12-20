@@ -104,16 +104,22 @@ body {
     width: 100%;
 }
 
+.bottom-scratch div img{
+  margin-top: -8px;
+}
+
 .bottom-scratch img{ 
     max-width: 100%;
 }
 
 .meet-us-content{
-    display: table-row;
+    display: inherit;
     background-color: white;
     position: relative;
     left: 0%;
     width: 100%;
+    height: 338px;
+
 }
 
 .meet-us-content-block{
@@ -125,11 +131,13 @@ body {
     display: block;
     float: left;
     text-align: left;
-    margin-top: 25px;
+    margin-top: 40px;
     
 }
 .center-wok{
-  margin: 2%;
+  /*margin: 2%;*/
+  margin-top: 3%;
+  margin-bottom: 7%;
   padding-top: 3%;
   clear: both;
   color: black;
@@ -269,9 +277,9 @@ body {
   color: white;
 }
 
-.location img{
+.location div img{
   min-width: 15%;
-  max-width: 20%;
+  max-width: 80%;
   display: inline-block;
   float: left;
   margin-top: 5%;
@@ -281,12 +289,16 @@ body {
   display: inline-block;
   float: left;
   text-align: left;
-  padding-left: 5%;
 }
 
 .address h3{
   color: white;
 
+}
+
+.address p{
+  font-weight: normal;
+  text-decoration: underline;
 }
 
 /*PARALLAX*/
@@ -537,7 +549,7 @@ body {
     }   
 
     .address{
-      font-size: 1.7em;
+      font-size: 1.6em;
       line-height: 1em;
     }
 
