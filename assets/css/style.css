@@ -74,7 +74,7 @@ img { max-width: 100%; }
 
 .c-form-box p { opacity: 0.8; }
 
-.c-form-top { overflow: hidden; padding: 0 0 15px 0; /*border-bottom: 1px solid #fff; border-color: rgba(255, 255, 255, 0.8);*/ text-align: left; }
+.c-form-top { overflow: hidden; margin-bottom: 50px; padding: 0 0 15px 0; /*border-bottom: 1px solid #fff; border-color: rgba(255, 255, 255, 0.8);*/ text-align: left; }
 .c-form-top-left { float: left; width: 75%; }
 .c-form-top-left h3 { margin-top: 0; }
 .c-form-top-right { float: left; width: 25%; text-align: right; }
