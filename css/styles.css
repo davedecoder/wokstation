@@ -155,7 +155,7 @@ body {
 }
 
 .right-wok img{
-  width: 84%;
+  max-width: 84%;
 }
 
 #menu{
