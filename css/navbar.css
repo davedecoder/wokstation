@@ -18,7 +18,7 @@
     width: 250px; /* 0 width - change this with JavaScript */
     top: 0;
     overflow: hidden; /* Disable horizontal scroll */
-    padding-top: 100px; /* Place content 100px from the top */
+    padding-top: 145px; /* Place content 100px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */    
 }
 
@@ -147,7 +147,7 @@
 
     /* The side navigation menu */
     .sidenav {  
-        padding-top: 120px; /* Place content 40px from the top */
+        padding-top: 135px; /* Place content 40px from the top */
     }
 
     .sidenav a {
@@ -181,7 +181,7 @@
 
     /* The side navigation menu */
     .sidenav {
-        padding-top: 110px; /* Place content 40px from the top */
+        padding-top: 150px; /* Place content 40px from the top */
     }
 
     .sidenav a {
@@ -259,10 +259,7 @@
         width: 100%; /* 0 width - change this with JavaScript */
     }
 
-    /* The side navigation menu */
-    .sidenav {
-        padding-top: 50px; /* Place content 40px from the top */
-    }
+    
 
     .sidenav a {
         padding: 8px 8px 8px 8px;
@@ -276,10 +273,14 @@
     }
 
     .sidenav{
-        padding-top: 110px;
+        padding-top: 135px;
     }
 
     .sidenav a{
         line-height: 1.5em;
+    }
+
+    .navbar-bottom{
+        margin-top: 10px;
     }
 }
