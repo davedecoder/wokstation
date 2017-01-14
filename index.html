@@ -31,6 +31,9 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="css/navbar.css">
 
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+    
 	<!-- gallery -->
 	<link rel="stylesheet" href="assets/gallery/blueimp-gallery.min.css">
 	
@@ -172,56 +175,50 @@
 		<div class="col-sm-12 col-md-12" id="gallery">
 			<div class="carousel_container">
 				<!-- Slider Starts -->
-				<div id="myCarousel_2" class="carousel slide banner-slider animated bounceInDown" data-ride="carousel">     
-				      	<div class="carousel-inner">
-					        <!-- Item 1 -->
-					        <div class="item active carousel_item">
-					          <img src="images/gallery/gallery/carrusel1.jpg" class="carousel_background">
-					          <!--<img src="images/gallery/open.png">-->
-					        </div>
-					        <!-- #Item 1 -->
-					        <!-- Item 1 -->
-					        <div class="item carousel_item">
-					          <img src="images/gallery/gallery/carrusel2.jpg" class="carousel_background">
-					          <!--<img src="images/gallery/open.png">-->
-					        </div>
-					        <!-- #Item 1 -->
-					        <!-- Item 1 -->
-					        <div class="item carousel_item">
-					          <img src="images/gallery/gallery/carrusel3.jpg" class="carousel_background">
-					          <!--<img src="images/gallery/open.png">-->
-					        </div>
-					        <!-- #Item 1 -->
-					        <!-- Item 1 -->
-					        <div class="item carousel_item">
-					          <img src="images/gallery/gallery/carrusel4.jpg" class="carousel_background">
-					          <!--<img src="images/gallery/open.png">-->
-					        </div>
-					        <!-- #Item 1 -->
-					        <!-- Item 1 -->
-					        <div class="item carousel_item">
-					          <img src="images/gallery/gallery/carrusel5.jpg" class="carousel_background">
-					          <!--<img src="images/gallery/open.png">-->
-					        </div>
-					        <!-- #Item 1 -->
-					        <!-- Item 1 -->
-					        <div class="item carousel_item">
-					          <img src="images/gallery/gallery/carrusel6.jpg" class="carousel_background">
-					          <!--<img src="images/gallery/open.png">-->
-					        </div>
-					        <!-- #Item 1 -->
-					        <!-- Item 1 -->
-					        <div class="item carousel_item">
-					          <img src="images/gallery/gallery/carrusel7.jpg" class="carousel_background">
-					          <!--<img src="images/gallery/open.png">-->
-					        </div>
-					        <!-- #Item 1 -->
-				      	</div>
-				      	<!--
-				      	<a class="left carousel-control" href="#myCarousel_2" data-slide="prev"><span class="left_arrow_container_2"><img src="images/flecha_izq.png" alt=""></span></a>
-				      	<a class="right carousel-control" href="#myCarousel_2" data-slide="next"><div class="right_arrow_container_2"><img src="images/flecha_der.png" alt=""></div></a>
-				      -->
-				</div>
+				<div class="slider autoplay">
+			      <!-- Item 1 -->
+			        <div>
+			          <img src="images/gallery/gallery/carrusel1.jpg">
+			          <!--<img src="images/gallery/open.png">-->
+			        </div>
+			        <!-- #Item 1 -->
+			        <!-- Item 1 -->
+			        <div>
+			          <img src="images/gallery/gallery/carrusel2.jpg">
+			          <!--<img src="images/gallery/open.png">-->
+			        </div>
+			        <!-- #Item 1 -->
+			        <!-- Item 1 -->
+			        <div >
+			          <img src="images/gallery/gallery/carrusel3.jpg" >
+			          <!--<img src="images/gallery/open.png">-->
+			        </div>
+			        <!-- #Item 1 -->
+			        <!-- Item 1 -->
+			        <div >
+			          <img src="images/gallery/gallery/carrusel4.jpg" >
+			          <!--<img src="images/gallery/open.png">-->
+			        </div>
+			        <!-- #Item 1 -->
+			        <!-- Item 1 -->
+			        <div >
+			          <img src="images/gallery/gallery/carrusel5.jpg">
+			          <!--<img src="images/gallery/open.png">-->
+			        </div>
+			        <!-- #Item 1 -->
+			        <!-- Item 1 -->
+			        <div >
+			          <img src="images/gallery/gallery/carrusel6.jpg" >
+			          <!--<img src="images/gallery/open.png">-->
+			        </div>
+			        <!-- #Item 1 -->
+			        <!-- Item 1 -->
+			        <div >
+			          <img src="images/gallery/gallery/carrusel7.jpg" >
+			          <!--<img src="images/gallery/open.png">-->
+			        </div>
+			        <!-- #Item 1 -->
+			    </div>
 				<!-- #Slider Ends -->
 			</div>				
 		</div>
@@ -408,5 +405,23 @@
 	<script src="js/mainController.js" type="text/javascript"></script>
 	<!-- gallery -->
 	<script src="assets/gallery/jquery.blueimp-gallery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+	<script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+    $(document).on('ready', function() {      
+
+      $('.autoplay').slick({
+		  slidesToShow: 1,
+		  slidesToScroll: 1,
+		  autoplay: true,
+		  autoplaySpeed: 4000,
+		});
+
+      /*
+      setInterval(function(){
+
+      }, 1000);*/
+    });
+  </script>
 </body>
 </html>
