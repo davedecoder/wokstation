@@ -69,18 +69,19 @@
 }
 
 .navbar-brand-augmented{
+    top: -12px;
     text-align: center;
-    width: 100%;    
+    width: 100%;
     margin-left: 0px;
     position: absolute;
     z-index: 950;
-    left: 33px;
+    left: 52px;
 }
 
 .navbar-brand-augmented img{
     padding: 0;
     margin: 0;
-    width: 150px;
+    width: 110px;
     float: left;
 }
 
