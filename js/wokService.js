@@ -13,7 +13,7 @@ angular.module('wokStation').factory('WokService', function($http, $sce){
 
 	function getInstagramRecentPics(){
 		
-		var url = "https://api.instagram.com/v1/users/self/media/recent/?access_token=744911049.eeed5b2.67a3d49c3b0640568beb732268a55543&callback=JSON_CALLBACK";		
+		var url = "https://api.instagram.com/v1/users/self/media/recent/?access_token=1699446928.9e50fe3.1ee3e0bd8fa9498a891db7ee18da5a7c&callback=JSON_CALLBACK";		
 		$sce.trustAsResourceUrl(url);	
 		return $http.jsonp(url).then(recentInstagramMediaSuccess, recentInstagramMediaError);
 		/*	

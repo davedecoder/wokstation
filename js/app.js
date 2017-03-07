@@ -1,4 +1,6 @@
-angular.module("wokStation", []);
+
+angular.module("wokStation", ['imageCropper']);
+
 
 angular
 .module('wokStation')
@@ -22,7 +24,7 @@ angular
 				index++;
 				mainIndex++;
 			}
-			$scope.instagramRecentMedia = images;
+			$scope.instagramRecentMedia = images;			
 		});
 	};
 

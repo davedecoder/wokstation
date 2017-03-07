@@ -37,6 +37,7 @@
 	<!-- gallery -->
 	<link rel="stylesheet" href="assets/gallery/blueimp-gallery.min.css">
 	
+	
 </head>
 <div class="se-pre-con">
 </div>
@@ -241,8 +242,16 @@
 			<!-- works -->
 			<a href="https://www.instagram.com/thewokstation/" target="_blank" title="">
 				<div id="works"  class=" clearfix grid"> 					
-				    <figure class="effect-oscar  wowload fadeInUp" ng-repeat="image in instagramRecentMedia">
-				        <img src="{{image.url}}" alt="img01"/>			        
+				    <figure class="effect-oscar  wowload fadeInUp" ng-repeat="image in instagramRecentMedia">	
+				    	<image-cropper
+				    		image-url="{{image.url}}"
+				    		width="320"
+				    		height="320"
+				    		center-on-init="true"
+				    		zoom-step="0.1"
+				    		show-controls="false"
+				    		>				    		
+				    	</image-cropper>
 				    </figure>
 				    <!--
 				    <figure class="effect-oscar  wowload fadeInUp">
@@ -407,13 +416,14 @@
 	<!-- gallery -->
 	<script src="assets/gallery/jquery.blueimp-gallery.min.js"></script>
 	<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
-	<script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
-
+	<script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>	
 	<script src="js/underscore-min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.min.js"></script>	
+	<script src="js/angular-image-cropper.js"></script>
 	<script src="js/app.js"></script>
 	<script src="js/wokService.js"></script>
+	
 	
 
 	<script type="text/javascript">
