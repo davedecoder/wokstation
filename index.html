@@ -1,5 +1,5 @@
 <!DOCTYPE html> 
-<html lang="es"> 
+<html lang="es" ng-app="wokStation"> 
 <head>     
 	<meta charset="utf-8">
 	<title>WokStation</title>     
@@ -40,7 +40,7 @@
 </head>
 <div class="se-pre-con">
 </div>
-<body>
+<body ng-controller="wokController">
 	<!-- NavBar -->
 	<div class="sidenav-background">
 
@@ -240,11 +240,12 @@
 		<div class="col-sm-12 col-md-12" id="works">
 			<!-- works -->
 			<a href="https://www.instagram.com/thewokstation/" target="_blank" title="">
-				<div id="works"  class=" clearfix grid"> 
-				    <figure class="effect-oscar  wowload fadeInUp">
-				        <img src="images/gallery/gallery/open.jpg" alt="img01"/>			        
+				<div id="works"  class=" clearfix grid"> 					
+				    <figure class="effect-oscar  wowload fadeInUp" ng-repeat="image in instagramRecentMedia">
+				        <img src="{{image.url}}" alt="img01"/>			        
 				    </figure>
-				     <figure class="effect-oscar  wowload fadeInUp">
+				    <!--
+				    <figure class="effect-oscar  wowload fadeInUp">
 				        <img src="images/gallery/gallery/primera.jpg" alt="img01"/>			        
 				    </figure>
 				     <figure class="effect-oscar  wowload fadeInUp">
@@ -267,7 +268,7 @@
 				    </figure>
 				    <figure class="effect-oscar  wowload fadeInUp">
 				        <img src="images/gallery/gallery/septima.jpg" alt="img01"/>
-				    </figure>
+				    </figure>-->
 				</div>
 			</a>			
 			<!-- works -->			
@@ -367,7 +368,7 @@
 					<div class="tail-img">
 						<img src="images/derechos-reservados-icon.png" alt="">						
 					</div>
-					<div class="normal-text footer-text">
+					<div class="normal-text footer-text" ng-click="hello()">
 						<p>Todos los Derechos Reservados 2016</p>
 					</div>
 				</div>
@@ -407,6 +408,14 @@
 	<script src="assets/gallery/jquery.blueimp-gallery.min.js"></script>
 	<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
 	<script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+
+	<script src="js/underscore-min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.min.js"></script>	
+	<script src="js/app.js"></script>
+	<script src="js/wokService.js"></script>
+	
+
 	<script type="text/javascript">
     $(document).on('ready', function() {      
 
